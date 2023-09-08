@@ -17,7 +17,6 @@ body {
   display: grid;
   grid-template-columns: 35% auto;
   grid-column-gap: 0px;
-  overflow: hidden;
 
   height: 100vh;
   width: 100vw;
@@ -26,11 +25,40 @@ body {
 .left {
   background-color: red;
   height: 100vh;
-  width: 100vw;
+  width: 35vw;
+  display: flex;
+  align-items: center;
 }
 
 .right {
   background-color: blue;
   height: 100vh;
-  width: 100vw;
+  width: 65vw;
+  padding: 3.5rem;
+}
+
+.logo {
+  background-color: green;
+  width: 100%;
+  height: 17rem;
+}
+
+.qwerty {
+  width: 100%;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.label {
+  display: block;
+}
+
+.input {
+  width: 30rem;
 }

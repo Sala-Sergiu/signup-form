@@ -11,6 +11,15 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+:root {
+  --text-color: #252b48;
+  --bg-color: #f7e987;
+  --teal: rgb(91, 154, 139);
+  --teal-shade: #bdd7d1;
 }
 
 .container {
@@ -28,22 +37,52 @@ body {
   width: 35vw;
   display: flex;
   align-items: center;
+
+  background-size: cover;
+  background-image: url(./img/img1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .right {
-  background-color: blue;
+  background-color: var(--bg-color);
   height: 100vh;
   width: 65vw;
   padding: 3.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.logo-container {
+  margin-bottom: 25rem;
+  background-color: rgba(91, 154, 139, 0.4);
+  width: 100%;
+  height: 17rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  background-color: green;
-  width: 100%;
-  height: 17rem;
+  font-size: 6rem;
+  letter-spacing: -3px;
 }
 
-.qwerty {
+.heading2 {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 2.5rem;
+}
+
+.logo-container {
   width: 100%;
 }
 
@@ -57,8 +96,48 @@ body {
 
 .label {
   display: block;
+  font-size: 2rem;
 }
 
 .input {
-  width: 30rem;
+  border: none;
+  width: 40rem;
+  padding: 0.35rem 0;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  border: solid 1px var(--teal);
+  font-weight: 600;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.input:focus {
+  background-color: var(--teal-shade);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.btn {
+  width: 20rem;
+  padding: 1rem 0.7rem;
+
+  border: solid 5px var(--text-color);
+  border-radius: 5px;
+  background-color: var(--teal);
+  font-weight: 600;
+  cursor: pointer;
+
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  border-color: var(--teal);
+  background-color: var(--bg-color);
+}
+
+.span {
+  cursor: pointer;
+  color: var(--teal);
 }

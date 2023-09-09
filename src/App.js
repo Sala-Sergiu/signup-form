@@ -31,7 +31,8 @@ function RightBox() {
       <InputBox />
       <Button />
       <Text>
-        If you alreadu have an account, then you can <span>log in</span>
+        If you already have an account, then you can{" "}
+        <span className="span">log in</span>
       </Text>
     </section>
   );
@@ -39,15 +40,15 @@ function RightBox() {
 
 function Logo() {
   return (
-    <div className="qwerty">
-      <h1 className="logo">Logo</h1>
+    <div className="logo-container">
+      <h1 className="logo">The Odin Project</h1>
     </div>
   );
 }
 
 function Text({ children }) {
   return (
-    <div>
+    <div className="text">
       <p>{children}</p>
     </div>
   );
@@ -55,7 +56,7 @@ function Text({ children }) {
 function InputBox() {
   return (
     <>
-      <h2>Let's do this</h2>
+      <h2 className="heading2">Let's do this</h2>
       <div className="input-grid">
         <div>
           <label for="firstName" className="label">
@@ -123,5 +124,5 @@ function InputBox() {
   );
 }
 function Button() {
-  return <button>Sing up!</button>;
+  return <button className="btn">Sign up!</button>;
 }

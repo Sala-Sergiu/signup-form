@@ -127,6 +127,7 @@ body {
   background-color: var(--teal);
   font-weight: 600;
   cursor: pointer;
+  color: var(--bg-color);
 
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -135,6 +136,7 @@ body {
 .btn:hover {
   border-color: var(--teal);
   background-color: var(--bg-color);
+  color: var(--teal);
 }
 
 .span {
